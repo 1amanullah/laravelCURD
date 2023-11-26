@@ -91,6 +91,6 @@ class ProductController extends Controller
     {
         $product = Product::where('id',$id)->first();
         $product->delete();
-         
+        return redirect('/')->withSuccess('Employee Delete'); 
     }
 }
